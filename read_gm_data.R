@@ -1,6 +1,7 @@
 gdp <- read.csv("data/data-1952.csv")
 new <- read.csv("data/data-1957.csv")
 
+# Calculating GDP by tiffert
 gdp <- rbind(gdp,new)
 
 gdp$gdp <- gdp$pop*gdp$gdpPercap
